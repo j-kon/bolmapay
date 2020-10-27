@@ -1,4 +1,5 @@
 import 'package:bolmapay/app/app_colors.dart';
+import 'package:bolmapay/screens/auth/sign_in.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,8 @@ class BolmaPay extends StatelessWidget {
       ),
       home: SignUp(),
       initialRoute: SignUp.id,
-      routes: {SignUp.id: (context) => SignUp()},
+      routes: {SignUp.id: (context) => SignUp(),
+      SignIn.id: (context) => SignIn()},
     );
   }
 }

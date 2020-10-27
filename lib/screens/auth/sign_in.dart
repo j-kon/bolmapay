@@ -2,9 +2,11 @@ import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_decoration.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
+import 'package:bolmapay/screens/auth/sign_up.dart';
 import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
@@ -32,7 +34,12 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             Height30(),
-            Text(AppStrings.signInNote),
+            Text(
+              AppStrings.signInNote,
+              style: AppTextStyle.textSize15.copyWith(
+                color: AppColors.textColor,
+              ),
+            ),
             Height30(),
             TextField(
               obscureText: true,
@@ -68,7 +75,7 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             Height30(),
-          CustomButton(
+            CustomButton(
               text: Text(
                 AppStrings.signIn.toUpperCase(),
                 style: AppTextStyle.textSize20.copyWith(
@@ -94,6 +101,10 @@ class _SignInState extends State<SignIn> {
                       color: AppColors.primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        Navigator.pushNamed(context, SignUp.id);
+                      },
                   ),
                 ],
               ),
