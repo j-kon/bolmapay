@@ -14,4 +14,10 @@ class AppStrings {
   static const String emailAddress = 'Email Address';
   static const String newBolmaPin = 'New Bolma Pin';
   static const String forgetPin = 'Forget PIN';
+
+  static const String home = 'Home';
+  static const String wallet = 'Wallet';
+  static const String notification = 'Notification';
+  static const String transactions = 'Transactions';
+  static const String profile = 'Profile';
 }
