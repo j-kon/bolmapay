@@ -1,4 +1,5 @@
 import 'package:bolmapay/app/app_colors.dart';
+import 'package:bolmapay/screens/auth/sign_up.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,6 +25,9 @@ class BolmaPay extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 15.0, fontFamily: 'Noto Sans JP'),
         ),
       ),
+      home: SignUp(),
+      initialRoute: SignUp.id,
+      routes: {SignUp.id: (context) => SignUp()},
     );
   }
 }
