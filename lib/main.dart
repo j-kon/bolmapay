@@ -1,4 +1,5 @@
 import 'package:bolmapay/app/app_colors.dart';
+import 'package:bolmapay/screens/auth/retrive_pin.dart';
 import 'package:bolmapay/screens/auth/sign_in.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
@@ -27,11 +28,14 @@ class BolmaPay extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 15.0, fontFamily: 'Noto Sans JP'),
         ),
       ),
-      home: BottomNavBar(),
-      initialRoute: BottomNavBar.id,
-      routes: {SignUp.id: (context) => SignUp(),
-      SignIn.id: (context) => SignIn(),
-      BottomNavBar.id: (context) => BottomNavBar()},
+      home: RetrivePin(),
+      initialRoute: RetrivePin.id,
+      routes: {
+        SignUp.id: (context) => SignUp(),
+        SignIn.id: (context) => SignIn(),
+        BottomNavBar.id: (context) => BottomNavBar(),
+        RetrivePin.id: (context) => RetrivePin(),
+      },
     );
   }
 }
