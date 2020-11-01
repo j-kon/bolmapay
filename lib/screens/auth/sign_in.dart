@@ -2,7 +2,9 @@ import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_decoration.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
+import 'package:bolmapay/screens/auth/retrive_pin.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
+import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/cupertino.dart';
@@ -68,8 +70,13 @@ class _SignInState extends State<SignIn> {
                   TextSpan(
                     text: AppStrings.forgetPin,
                     style: AppTextStyle.textSize15.copyWith(
-                      color: AppColors.textColor,
+                      color: AppColors.primaryColor,
+                      fontWeight: FontWeight.bold,
                     ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        Navigator.pushNamed(context, RetrivePin.id);
+                      },
                   ),
                 ],
               ),
@@ -82,7 +89,7 @@ class _SignInState extends State<SignIn> {
                   color: Colors.white,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, BottomNavBar.id),
             ),
             Height40(),
             RichText(

@@ -1,5 +1,23 @@
 import 'package:flutter/widgets.dart';
 
+class Height5 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 5,
+    );
+  }
+}
+
+class Height10 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 10,
+    );
+  }
+}
+
 class Height20 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,7 +30,9 @@ class Height20 extends StatelessWidget {
 class Height30 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: 30);
+    return SizedBox(
+      height: 30,
+    );
   }
 }
 

@@ -18,10 +18,25 @@ class AppStrings {
   static const String emailAddress = 'Email Address';
   static const String newBolmaPin = 'New BolmaPay PIN';
   static const String forgetPin = 'Forget PIN';
+  static const String hello = 'Hello';
+  static const String fundWallet = 'Fund Wallet';
 
   static const String home = 'Home';
   static const String wallet = 'Wallet';
-  static const String notification = 'Notification';
+  static const String notification = 'Notifications';
   static const String transactions = 'Transactions';
   static const String profile = 'Profile';
+
+  static const String airtime = 'Airtime';
+  static const String caedless = 'Cardless';
+  static const String dataBundle = 'Data Bundle';
+  static const String payABill = 'Pay A Bill';
+  static const String payLink = 'Pay Link';
+  static const String people = 'People';
+  static const String sendMoney = 'Send Money';
+  static const String transfer = 'Tranfer';
+  static const String virtualCard = 'Virtual Card';
+
+  static const String overview = 'Overview';
+  static const String viewInsight = 'View Insight';
 }
