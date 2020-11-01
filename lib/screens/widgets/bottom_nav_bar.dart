@@ -1,6 +1,11 @@
 import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
+import 'package:bolmapay/screens/pages/home.dart';
+import 'package:bolmapay/screens/pages/notifications.dart';
+import 'package:bolmapay/screens/pages/profile.dart';
+import 'package:bolmapay/screens/pages/transactions.dart';
+import 'package:bolmapay/screens/pages/wallet.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -13,27 +18,12 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle = AppTextStyle.textSize15;
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Wallet',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Notifications',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Transactions',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 4: Profile',
-      style: optionStyle,
-    ),
+  static final List<Widget> _widgetOptions = <Widget>[
+    Home(),
+    Wallet(),
+    Notifications(),
+    Transactions(),
+    Profile(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -42,12 +32,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(color: AppColors.primaryColor, boxShadow: [
-          BoxShadow(
-            blurRadius: 20,
-            color: Colors.white.withOpacity(.1),
-          )
-        ]),
+        decoration: BoxDecoration(
+          color: AppColors.primaryColor,
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 20,
+              color: Colors.white.withOpacity(.1),
+            )
+          ],
+        ),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
