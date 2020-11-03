@@ -54,43 +54,45 @@ class _HomeState extends State<Home> {
                 ],
               ),
               Height30(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        AppStrings.hello,
-                        style: AppTextStyle.textSize20.copyWith(
-                          color: AppColors.textColor,
+              SingleChildScrollView(
+                              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          AppStrings.hello,
+                          style: AppTextStyle.textSize20.copyWith(
+                            color: AppColors.textColor,
+                          ),
                         ),
-                      ),
-                      Height5(),
-                      Text(
-                        'Jeremiah Jacob',
-                        style: AppTextStyle.textSize18.copyWith(
+                        Height5(),
+                        Text(
+                          'Jeremiah Jacob',
+                          style: AppTextStyle.textSize18.copyWith(
+                            color: AppColors.primaryColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(
+                          Icons.add_box_outlined,
+                          size: 50,
                           color: AppColors.primaryColor,
                         ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Icon(
-                        Icons.add_box_outlined,
-                        size: 50,
-                        color: AppColors.primaryColor,
-                      ),
-                      Text(
-                        AppStrings.fundWallet,
-                        style: AppTextStyle.textSize15.copyWith(
-                          color: AppColors.primaryColor,
+                        Text(
+                          AppStrings.fundWallet,
+                          style: AppTextStyle.textSize15.copyWith(
+                            color: AppColors.primaryColor,
+                          ),
                         ),
-                      ),
-                    ],
-                  )
-                ],
+                      ],
+                    )
+                  ],
+                ),
               ),
               Height20(),
               Padding(

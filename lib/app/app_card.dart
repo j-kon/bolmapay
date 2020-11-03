@@ -234,7 +234,7 @@ class AppCard {
     elevation: 10,
     color: AppColors.primaryColor,
     child: Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(15.0),
       child: Column(
         children: [
           Image.asset(
@@ -258,7 +258,7 @@ class AppCard {
     ),
     elevation: 10,
     child: Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(15.0),
       child: Column(
         children: [
           Icon(
@@ -312,7 +312,7 @@ class AppCard {
     color: AppColors.primaryColor,
     child: Padding(
       padding: const EdgeInsets.all(
-        20.0,
+        15.0,
       ),
       child: Column(
         children: [

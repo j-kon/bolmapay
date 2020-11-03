@@ -33,8 +33,8 @@ class BolmaPay extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 15.0, fontFamily: 'Roboto'),
         ),
       ),
-      home: HelpLine(),
-      initialRoute: HelpLine.id,
+      home: Home(),
+      initialRoute: Home.id,
       routes: {
         SignUp.id: (context) => SignUp(),
         SignIn.id: (context) => SignIn(),
