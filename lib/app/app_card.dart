@@ -212,4 +212,17 @@ class AppCard {
       ),
     ),
   );
+
+  static final qrScan = Card(
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(5.0),
+    ),
+    elevation: 10,
+    child: Container(
+      child: Icon(
+        Icons.qr_code_outlined,
+        size: 300,
+      ),
+    ),
+  );
 }
