@@ -26,6 +26,20 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
   );
 
+  static const textSize25 = TextStyle(
+    fontSize: 25.0,
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.bold,
+  );
+
+  static const textSize28 = TextStyle(
+    fontSize: 28.0,
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.bold,
+  );
+
+
+
   static const textSize30 = TextStyle(
     fontSize: 30.0,
     fontFamily: 'Roboto',

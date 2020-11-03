@@ -4,6 +4,10 @@ import 'package:bolmapay/screens/auth/sign_in.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
 import 'package:bolmapay/screens/pages/home.dart';
 import 'package:bolmapay/screens/pages/notifications.dart';
+import 'package:bolmapay/screens/pages/profile.dart';
+import 'package:bolmapay/screens/pages/receive_money.dart';
+import 'package:bolmapay/screens/pages/transactions.dart';
+import 'package:bolmapay/screens/pages/wallet.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -28,8 +32,8 @@ class BolmaPay extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 15.0, fontFamily: 'Roboto'),
         ),
       ),
-      home: SignIn(),
-      initialRoute: SignIn.id,
+      home: Home(),
+      initialRoute: Home.id,
       routes: {
         SignUp.id: (context) => SignUp(),
         SignIn.id: (context) => SignIn(),
@@ -37,6 +41,10 @@ class BolmaPay extends StatelessWidget {
         RetrivePin.id: (context) => RetrivePin(),
         Home.id: (context) => Home(),
         Notifications.id: (context) => Notifications(),
+        ReceiveMoney.id: (context) => ReceiveMoney(),
+        Wallet.id: (context) => Wallet(),
+        Profile.id: (context) => Profile(),
+        Transactions.id: (context) => Transactions()
       },
     );
   }

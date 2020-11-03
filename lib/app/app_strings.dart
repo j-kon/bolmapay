@@ -3,6 +3,8 @@ class AppStrings {
   static const String signUp = 'Sign Up';
   static const String retrivePin = 'Retrive PIN';
   static const String retriveBolma = 'Retrive BolmaPay PIN';
+  static const String receiveMoney = 'Receive Money';
+  static const String scanTo = 'Scan To Receive';
 
   static const String signInNote = 'Sign In with phone number and BolmaPay pin';
   static const String signUpNote =
@@ -11,6 +13,7 @@ class AppStrings {
       'Enter your phone number, a PIN will be sent to your phone number and email, use it to sign in your BolmaPay account and you can change the PIN anytime';
   static const String dontHaveAnAccount = 'Don\'t have an account';
   static const String alreadyHaveAnAcount = 'Already have an account';
+  static const String showThisQR = 'Show This QR To Receive Money';
 
   static const String phoneNumber = 'Phone Number';
   static const String bolmaPin = 'BolmaPay PIN';
