@@ -2,6 +2,7 @@ import 'package:bolmapay/app/app_card.dart';
 import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
+import 'package:bolmapay/screens/pages/help_line.dart';
 import 'package:bolmapay/screens/pages/receive_money.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
@@ -40,12 +41,16 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   IconButton(
-                      icon: Icon(
-                        Icons.help_center,
-                        color: AppColors.primaryColor,
-                        size: 40,
-                      ),
-                      onPressed: () {}),
+                    icon: Icon(
+                      Icons.help_center,
+                      color: AppColors.primaryColor,
+                      size: 40,
+                    ),
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      HelpLine.id,
+                    ),
+                  ),
                 ],
               ),
               Height30(),

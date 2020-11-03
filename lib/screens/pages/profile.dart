@@ -6,6 +6,8 @@ import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/material.dart';
 
+import 'help_line.dart';
+
 class Profile extends StatefulWidget {
   static const id = 'profile';
   @override
@@ -37,12 +39,16 @@ class _ProfileState extends State<Profile> {
                   ),
                 ),
                 IconButton(
-                    icon: Icon(
-                      Icons.help_center,
-                      color: AppColors.primaryColor,
-                      size: 40,
-                    ),
-                    onPressed: () {}),
+                  icon: Icon(
+                    Icons.help_center,
+                    color: AppColors.primaryColor,
+                    size: 40,
+                  ),
+                  onPressed: () => Navigator.pushNamed(
+                    context,
+                    HelpLine.id,
+                  ),
+                ),
               ],
             ),
             Height20(),

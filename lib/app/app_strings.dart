@@ -5,6 +5,7 @@ class AppStrings {
   static const String retriveBolma = 'Retrive BolmaPay PIN';
   static const String receiveMoney = 'Receive Money';
   static const String scanTo = 'Scan To Receive';
+  static const String helplineAnd = 'Helpline & Support';
 
   static const String signInNote = 'Sign In with phone number and BolmaPay pin';
   static const String signUpNote =
@@ -14,6 +15,7 @@ class AppStrings {
   static const String dontHaveAnAccount = 'Don\'t have an account';
   static const String alreadyHaveAnAcount = 'Already have an account';
   static const String showThisQR = 'Show This QR To Receive Money';
+  static const String helplineNote = 'Choose from the following actions';
 
   static const String phoneNumber = 'Phone Number';
   static const String bolmaPin = 'BolmaPay PIN';
@@ -42,4 +44,8 @@ class AppStrings {
 
   static const String overview = 'Overview';
   static const String viewInsight = 'View Insight';
+  static const String aboutBolma = 'About\n BolmaPay';
+  static const String emailUs = 'Email Us';
+  static const String talkWith = 'Talk With \n Our Operator';
+  static const String chatWith = 'Chat With \n Support Team';
 }

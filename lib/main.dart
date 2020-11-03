@@ -2,6 +2,7 @@ import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/screens/auth/retrive_pin.dart';
 import 'package:bolmapay/screens/auth/sign_in.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
+import 'package:bolmapay/screens/pages/help_line.dart';
 import 'package:bolmapay/screens/pages/home.dart';
 import 'package:bolmapay/screens/pages/notifications.dart';
 import 'package:bolmapay/screens/pages/profile.dart';
@@ -32,8 +33,8 @@ class BolmaPay extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 15.0, fontFamily: 'Roboto'),
         ),
       ),
-      home: Home(),
-      initialRoute: Home.id,
+      home: HelpLine(),
+      initialRoute: HelpLine.id,
       routes: {
         SignUp.id: (context) => SignUp(),
         SignIn.id: (context) => SignIn(),
@@ -44,7 +45,8 @@ class BolmaPay extends StatelessWidget {
         ReceiveMoney.id: (context) => ReceiveMoney(),
         Wallet.id: (context) => Wallet(),
         Profile.id: (context) => Profile(),
-        Transactions.id: (context) => Transactions()
+        Transactions.id: (context) => Transactions(),
+        HelpLine.id: (context) => HelpLine()
       },
     );
   }
