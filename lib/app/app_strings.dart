@@ -33,7 +33,7 @@ class AppStrings {
   static const String profile = 'Profile';
 
   static const String airtime = 'Airtime';
-  static const String caedless = 'Cardless';
+  static const String cardless = 'Cardless';
   static const String dataBundle = 'Data Bundle';
   static const String payABill = 'Pay A Bill';
   static const String payLink = 'Pay Link';
