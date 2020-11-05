@@ -2,7 +2,17 @@ import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/screens/auth/retrive_pin.dart';
 import 'package:bolmapay/screens/auth/sign_in.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
+import 'package:bolmapay/screens/pages/help_line.dart';
 import 'package:bolmapay/screens/pages/home.dart';
+import 'package:bolmapay/screens/pages/home_page/airtime.dart';
+import 'package:bolmapay/screens/pages/home_page/cardless.dart';
+import 'package:bolmapay/screens/pages/home_page/data_bundle.dart';
+import 'package:bolmapay/screens/pages/home_page/pay_a_bill.dart';
+import 'package:bolmapay/screens/pages/home_page/pay_link.dart';
+import 'package:bolmapay/screens/pages/home_page/people.dart';
+import 'package:bolmapay/screens/pages/home_page/send_money.dart';
+import 'package:bolmapay/screens/pages/home_page/transfer.dart';
+import 'package:bolmapay/screens/pages/home_page/virtual_card.dart';
 import 'package:bolmapay/screens/pages/notifications.dart';
 import 'package:bolmapay/screens/pages/profile.dart';
 import 'package:bolmapay/screens/pages/receive_money.dart';
@@ -44,7 +54,17 @@ class BolmaPay extends StatelessWidget {
         ReceiveMoney.id: (context) => ReceiveMoney(),
         Wallet.id: (context) => Wallet(),
         Profile.id: (context) => Profile(),
-        Transactions.id: (context) => Transactions()
+        Transactions.id: (context) => Transactions(),
+        HelpLine.id: (context) => HelpLine(),
+        Airtime.id: (context) => Airtime(),
+        Transfer.id: (context) => Transfer(),
+        Cardless.id: (context) => Cardless(),
+        DataBundle.id: (context) => DataBundle(),
+        PayABill.id: (context) => PayABill(),
+        SendMoney.id: (context) => SendMoney(),
+        VirtaulCard.id: (context) => VirtaulCard(),
+        People.id: (context) => People(),
+        PayLink.id: (context) => PayLink(),
       },
     );
   }

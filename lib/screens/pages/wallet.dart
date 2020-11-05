@@ -6,6 +6,8 @@ import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/material.dart';
 
+import 'help_line.dart';
+
 class Wallet extends StatefulWidget {
   static const id = 'wallet';
   @override
@@ -41,7 +43,10 @@ class _WalletState extends State<Wallet> {
                       color: AppColors.primaryColor,
                       size: 40,
                     ),
-                    onPressed: () {}),
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      HelpLine.id,
+                    ),),
               ],
             ),
             Height20(),

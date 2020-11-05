@@ -5,23 +5,21 @@ import 'package:bolmapay/screens/pages/receive_money.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/material.dart';
+import '../help_line.dart';
 
-import 'help_line.dart';
-
-class Transactions extends StatefulWidget {
-  static const id = 'transactions';
+class PayLink extends StatefulWidget {
+  static const id = 'pay_link';
   @override
-  _TransactionsState createState() => _TransactionsState();
+  _PayLinkState createState() => _PayLinkState();
 }
 
-class _TransactionsState extends State<Transactions> {
+class _PayLinkState extends State<PayLink> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body: Padding(
         padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
           children: [
             Height30(),
             Row(
@@ -53,7 +51,7 @@ class _TransactionsState extends State<Transactions> {
             ),
             Height20(),
             Text(
-              AppStrings.transactions,
+              AppStrings.payLink,
               style: AppTextStyle.textSize30.copyWith(
                 color: AppColors.primaryColor,
               ),
@@ -61,7 +59,7 @@ class _TransactionsState extends State<Transactions> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavBar(selectedIndex: 3),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }

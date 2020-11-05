@@ -8,4 +8,6 @@ class AppIcons {
   static const String peopleIcon = 'assets/images/icons/people.png';
   static const String sendMoneyIcon = 'assets/images/icons/sendMoney.png';
   static const String virtualCardIcon = 'assets/images/icons/virtualCard.png';
+  static const String logo = 'assets/images/logo.png';
+  static const String transLogo = 'assets/images/trans_logo.png';
 }

@@ -2,6 +2,7 @@ import 'package:bolmapay/app/app_card.dart';
 import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
+import 'package:bolmapay/screens/pages/help_line.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
@@ -28,13 +29,12 @@ class _ReceiveMoneyState extends State<ReceiveMoney> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
-                    icon: Icon(
-                      Icons.qr_code,
-                      color: AppColors.primaryColor,
-                      size: 40,
-                    ),
-                    onPressed: (){ }
-                  ),
+                      icon: Icon(
+                        Icons.qr_code,
+                        color: AppColors.primaryColor,
+                        size: 40,
+                      ),
+                      onPressed: () {}),
                   IconButton(
                     icon: Icon(
                       Icons.help_center,
@@ -43,7 +43,7 @@ class _ReceiveMoneyState extends State<ReceiveMoney> {
                     ),
                     onPressed: () => Navigator.pushNamed(
                       context,
-                      BottomNavBar.id,
+                      HelpLine.id,
                     ),
                   ),
                 ],
@@ -58,24 +58,24 @@ class _ReceiveMoneyState extends State<ReceiveMoney> {
               ),
               Height10(),
               Text(AppStrings.showThisQR),
-              Height30(),
+              Height20(),
               Center(
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: AppCard.qrScan,
-                ),
-              ),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(30.0),
-                  child: CustomButton(
-                    text: Text(
-                      AppStrings.scanTo.toUpperCase(),
-                      style: AppTextStyle.textSize20.copyWith(
-                        color: Colors.white,
+                  child: Column(
+                    children: [
+                      AppCard.qrScan,
+                      Height30(),
+                      CustomButton(
+                        text: Text(
+                          AppStrings.scanTo.toUpperCase(),
+                          style: AppTextStyle.textSize20.copyWith(
+                            color: Colors.white,
+                          ),
+                        ),
+                        onPressed: () {},
                       ),
-                    ),
-                    onPressed: () {},
+                    ],
                   ),
                 ),
               ),
