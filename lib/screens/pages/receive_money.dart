@@ -1,8 +1,8 @@
+import 'package:bolmapay/app/app_bar.dart';
 import 'package:bolmapay/app/app_card.dart';
 import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
-import 'package:bolmapay/screens/pages/help_line.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
@@ -18,37 +18,19 @@ class _ReceiveMoneyState extends State<ReceiveMoney> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        actions: AppBarAction.appBarAction,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Height30(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                      icon: Icon(
-                        Icons.qr_code,
-                        color: AppColors.primaryColor,
-                        size: 40,
-                      ),
-                      onPressed: () {}),
-                  IconButton(
-                    icon: Icon(
-                      Icons.help_center,
-                      color: AppColors.primaryColor,
-                      size: 40,
-                    ),
-                    onPressed: () => Navigator.pushNamed(
-                      context,
-                      HelpLine.id,
-                    ),
-                  ),
-                ],
-              ),
-              Height10(),
+              
+              Height5(),
               Text(
                 AppStrings.receiveMoney,
                 style: AppTextStyle.textSize28.copyWith(
