@@ -1,8 +1,8 @@
+import 'package:bolmapay/app/app_bar.dart';
 import 'package:bolmapay/app/app_card.dart';
 import 'package:bolmapay/app/app_colors.dart';
 import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
-import 'package:bolmapay/screens/pages/receive_money.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/material.dart';
@@ -17,36 +17,17 @@ class _HelpLineState extends State<HelpLine> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        actions: AppBarAction.appBarAction,
+      ),
       body: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Height30(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                IconButton(
-                  icon: Icon(
-                    Icons.qr_code,
-                    color: AppColors.primaryColor,
-                    size: 40,
-                  ),
-                  onPressed: () => Navigator.pushNamed(
-                    context,
-                    ReceiveMoney.id,
-                  ),
-                ),
-                IconButton(
-                    icon: Icon(
-                      Icons.help_center,
-                      color: AppColors.primaryColor,
-                      size: 40,
-                    ),
-                    onPressed: () {}),
-              ],
-            ),
-            Height20(),
+            Height5(),
             Text(
               AppStrings.helplineAnd,
               style: AppTextStyle.textSize28.copyWith(
@@ -73,7 +54,7 @@ class _HelpLineState extends State<HelpLine> {
                     ],
                   ),
                   Height20(),
-                   Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       AppCard.talkWith,
