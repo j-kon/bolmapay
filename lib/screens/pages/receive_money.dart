@@ -7,6 +7,7 @@ import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class ReceiveMoney extends StatefulWidget {
   static const id = 'receive_money';

@@ -5,6 +5,7 @@ import 'package:bolmapay/app/app_text_styles.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class VirtaulCard extends StatefulWidget {
   static const id = 'virtual_card';
