@@ -4,7 +4,7 @@ import 'package:bolmapay/app/app_strings.dart';
 import 'package:bolmapay/app/app_text_styles.dart';
 import 'package:bolmapay/screens/auth/retrive_pin.dart';
 import 'package:bolmapay/screens/auth/sign_up.dart';
-import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
+import 'package:bolmapay/screens/pages/home.dart';
 import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/cupertino.dart';
@@ -89,7 +89,7 @@ class _SignInState extends State<SignIn> {
                   color: Colors.white,
                 ),
               ),
-              onPressed: () => Navigator.pushNamed(context, BottomNavBar.id),
+              onPressed: () => Navigator.pushNamed(context, Home.id),
             ),
             Height40(),
             RichText(

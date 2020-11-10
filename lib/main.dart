@@ -19,7 +19,9 @@ import 'package:bolmapay/screens/pages/receive_money.dart';
 import 'package:bolmapay/screens/pages/transactions.dart';
 import 'package:bolmapay/screens/pages/wallet.dart';
 import 'package:bolmapay/screens/widgets/bottom_nav_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(BolmaPay());
@@ -30,6 +32,7 @@ class BolmaPay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: AppColors.primaryColor,
@@ -42,8 +45,8 @@ class BolmaPay extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 15.0, fontFamily: 'Roboto'),
         ),
       ),
-      home: Home(),
-      initialRoute: Home.id,
+      home: SignIn(),
+      initialRoute: SignIn.id,
       routes: {
         SignUp.id: (context) => SignUp(),
         SignIn.id: (context) => SignIn(),

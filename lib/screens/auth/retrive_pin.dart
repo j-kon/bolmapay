@@ -7,6 +7,7 @@ import 'package:bolmapay/screens/widgets/forms/buttons.dart';
 import 'package:bolmapay/screens/widgets/spacer.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class RetrivePin extends StatefulWidget {
   static const id = 'retrive_pin';
