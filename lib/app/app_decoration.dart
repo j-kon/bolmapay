@@ -12,7 +12,6 @@ class AppDecorations {
       ),
     ),
     labelText: 'Enter Input',
-    hintText: 'Enter Input',
   );
 
   static const buttonStyle = BoxDecoration(

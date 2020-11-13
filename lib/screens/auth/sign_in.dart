@@ -46,7 +46,6 @@ class _SignInState extends State<SignIn> {
             TextField(
               obscureText: true,
               decoration: AppDecorations.textForm.copyWith(
-                hintText: AppStrings.phoneNumber,
                 labelText: AppStrings.phoneNumber,
               ),
             ),
@@ -54,7 +53,6 @@ class _SignInState extends State<SignIn> {
             TextField(
               obscureText: true,
               decoration: AppDecorations.textForm.copyWith(
-                hintText: AppStrings.bolmaPin,
                 labelText: AppStrings.bolmaPin,
               ),
             ),

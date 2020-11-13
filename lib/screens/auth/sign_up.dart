@@ -9,7 +9,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-
 class SignUp extends StatefulWidget {
   static const id = 'sign_up';
   @override
@@ -44,7 +43,6 @@ class _SignUpState extends State<SignUp> {
             TextField(
               obscureText: true,
               decoration: AppDecorations.textForm.copyWith(
-                hintText: AppStrings.fullName,
                 labelText: AppStrings.fullName,
               ),
             ),
@@ -52,7 +50,6 @@ class _SignUpState extends State<SignUp> {
             TextField(
               obscureText: true,
               decoration: AppDecorations.textForm.copyWith(
-                hintText: AppStrings.emailAddress,
                 labelText: AppStrings.emailAddress,
               ),
             ),
@@ -60,7 +57,6 @@ class _SignUpState extends State<SignUp> {
             TextField(
               obscureText: true,
               decoration: AppDecorations.textForm.copyWith(
-                hintText: AppStrings.phoneNumber,
                 labelText: AppStrings.phoneNumber,
               ),
             ),
@@ -68,7 +64,6 @@ class _SignUpState extends State<SignUp> {
             TextField(
               obscureText: true,
               decoration: AppDecorations.textForm.copyWith(
-                hintText: AppStrings.newBolmaPin,
                 labelText: AppStrings.newBolmaPin,
               ),
             ),
